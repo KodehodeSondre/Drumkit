@@ -1,0 +1,53 @@
+
+#skibidi {
+    display: grid;
+    grid-template-areas: 
+        "hihat openhat ride"
+        "snare kick tom"
+        ". clap tink";
+    justify-content: center;
+    align-content: center;  
+    gap: 20px;             
+    background-color: black;
+    height: 400px;
+    width: 600px;
+    margin: auto;       
+    border-radius: 10px;
+    padding: 20px;
+}
+.trommekit {
+    display: flex;
+    background-color: red;
+    color: white;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    border: 2px solid white;
+    border-radius: 10px; 
+    transition: transform 0.1s, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+.trommekit:hover {
+    background-color: darkred;
+}
+
+.trommekit:active {
+    transform: scale(0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hihat { grid-area: hihat; }
+#openhat { grid-area: openhat; }
+#ride { grid-area: ride; }
+#snare { grid-area: snare; }
+#kick { grid-area: kick; }
+#tom { grid-area: tom; }
+#clap { grid-area: clap; }
+#tink { grid-area: tink; }
