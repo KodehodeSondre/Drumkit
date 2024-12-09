@@ -34,6 +34,6 @@ document.querySelectorAll(".trommekit").forEach(div => {
             playSoundEffect(soundInfo.sound);
         });
     } else {
-        console.warn(`No sound mapped for div ID: ${divId}`);
+        console.log(`No sound mapped for div ID: ${divId}`);
     }
 });
